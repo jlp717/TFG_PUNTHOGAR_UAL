@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-col h-screen border">
+        <div class="flex items-center justify-between p-2 border-b" style="background-color: #7D6E9B ;">
+            <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 rounded-full w-10 h-10 p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fcb900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                    <line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+                <span class="sr-only">Toggle sidebar</span>
+            </button>
+            <header class="flex items-center gap-4" >
+                <div class="hidden md:flex items-center gap-2" >
+                    <a class="rounded-full overflow-hidden" href="#" rel="ugc">
+                        <img src="favicon-32x32(1).png" alt="User" width="32" height="32" class="border w-8 h-8 rounded-full object-cover" style="aspect-ratio:32/32;object-fit:cover"/>
+                    </a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fcb900" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 opacity-50">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="search" class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-24 md:w-72 lg:w-96" placeholder="Search" style="background-color: #EDE7F6;"/>
+                </div>
+            </header>
+            <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 rounded-full w-10 h-10 p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fcb900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                    <path d="M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <path d="M10.42 12.61a2.1 2.1 0 1 1 2.97 2.97L7.95 21 4 22l.99-3.95 5.43-5.44Z"></path>
+                </svg>
+                <span class="sr-only">Edit profile</span>
+            </button>
+        </div>
+        <div class="flex-1 flex overflow-hidden">
+            <div class="hidden md:flex flex-col w-72 border-r" style="background-color: #7D6E9B ;">
+                <div class="flex-1 border-b">
+                    <nav class="flex-1 p-2">
+                        <ul class="grid gap-1">
+                            <li class="relative">
+                                <a class="flex items-center gap-2 p-2 rounded-md" href="#" rel="ugc">
+                                    <img src="favicon-32x32(1).png" alt="User" width="40" height="40" class="border w-8 h-8 rounded-full object-cover" style="aspect-ratio:40/40;object-fit:cover"/>
+                                    <div class="font-semibold w-1/2 truncate">
+                                        <span class="dark:font-normal">Alice</span>
+                                    </div>
+                                    <div class="ml-auto text-sm">
+                                        <time class="text-sm font-normal">2:14 PM</time>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a class="flex items-center gap-2 p-2 rounded-md" href="#" rel="ugc">
+                                    <img src="favicon-32x32(1).png" alt="User" width="40" height="40" class="border w-8 h-8 rounded-full object-cover" style="aspect-ratio:40/40;object-fit:cover"/>
+                                    <div class="font-semibold w-1/2 truncate">
+                                        <span class="dark:font-normal">Bob</span>
+                                    </div>
+                                    <div class="ml-auto text-sm">
+                                        <time class="text-sm font-normal">Yesterday</time>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a class="flex items-center gap-2 p-2 rounded-md" href="#" rel="ugc">
+                                    <img src="favicon-32x32(1).png" alt="User" width="40" height="40" class="border w-8 h-8 rounded-full object-cover" style="aspect-ratio:40/40;object-fit:cover"/>
+                                    <div class="font-semibold w-1/2 truncate">
+                                        <span class="dark:font-normal">Charlie</span>
+                                    </div>
+                                    <div class="ml-auto text-sm">
+                                        <time class="text-sm font-normal">Monday</time>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a class="flex items-center gap-2 p-2 rounded-md" href="#" rel="ugc">
+                                    <img src="favicon-32x32(1).png" alt="User" width="40" height="40" class="border w-8 h-8 rounded-full object-cover" style="aspect-ratio:40/40;object-fit:cover"/>
+                                    <div class="font-semibold w-1/2 truncate">
+                                        <span class="dark:font-normal">David</span>
+                                    </div>
+                                    <div class="ml-auto text-sm">
+                                        <time class="text-sm font-normal">Sunday</time>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a class="flex items-center gap-2 p-2 rounded-md" href="#" rel="ugc">
+                                    <img src="favicon-32x32(1).png" alt="User" width="40" height="40" class="border w-8 h-8 rounded-full object-cover" style="aspect-ratio:40/40;object-fit:cover"/>
+                                    <div class="font-semibold w-1/2 truncate">
+                                        <span class="dark:font-normal">Eve</span>
+                                    </div>
+                                    <div class="ml-auto text-sm">
+                                        <time class="text-sm font-normal">Last week</time>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center justify-center p-2" style="background-color: #9B5EBA">
+                    <button class="flex items-center justify-center w-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground border p-2 text-white bg-[#C10076]" style="border: 2px solid; background-color: #C10076;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                          <path d="M4 13.5V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2h-5.5"></path>
+                          <polyline points="14 2 14 8 20 8"></polyline>
+                          <path d="M10.42 12.61a2.1 2.1 0 1 1 2.97 2.97L7.95 21 4 22l.99-3.95 5.43-5.44Z"></path>
+                        </svg>
+                        <span class="ml-2">New Chat</span>
+                      </button>                      
+                </div>                                  
+            </div>
+            <div class="flex-1 flex flex-col min-h-0" >
+                <div class="flex-1 overflow-auto">
+                    <div class="grid items-end gap-4 p-4" style="background-color: #EAE7F1;">
+                        <div class="flex items-center gap-4">
+                            <img src="favicon-32x32(1).png" alt="User" width="64" height="64" class="border w-12 h-12 rounded-full object-cover" style="aspect-ratio:64/64;object-fit:cover"/>
+                            <div class="flex flex-col gap-1">
+                                <h2 class="font-semibold">Alice</h2>
+                                <p class="text-sm font-normal opacity-70">Online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid gap-4 p-4">
+                        <div class="flex items-start gap-4">
+                            <div class="rounded-xl bg-gray-100 dark:bg-gray-800 flex-1 p-4" style="background-color: #E6DFF5;">
+                                <p>Hey, did you get the document I sent you earlier? It contains the details for our upcoming meeting. </p>
+                            </div>
+                            <img src="favicon-32x32(1).png" alt="User" width="64" height="64" class="border w-12 h-12 rounded-full object-cover" style="aspect-ratio:64/64;object-fit:cover"/>
+                        </div>
+                        <div class="flex items-end gap-4">
+                            <img src="favicon-32x32(1).png" alt="User" width="64" height="64" class="border w-12 h-12 rounded-full object-cover" style="aspect-ratio:64/64;object-fit:cover"/>
+                            <div class="rounded-xl bg-gray-100 dark:bg-gray-800 flex-1 p-4" style="background-color: #C79ECF;">
+                                <p> Yes, I did. Thanks for sending it over. I'll review it and let you know if I have any questions. </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="rounded-xl bg-gray-100 dark:bg-gray-800 flex-1 p-4" style="background-color: #E6DFF5;">
+                                <p>Hey, did you get the document I sent you earlier?</p>
+                            </div>
+                            <img src="favicon-32x32(1).png" alt="User" width="64" height="64" class="border w-12 h-12 rounded-full object-cover" style="aspect-ratio:64/64;object-fit:cover"/>
+                        </div>
+                        <div class="flex items-end gap-4">
+                            <img src="favicon-32x32(1).png" alt="User" width="64" height="64" class="border w-12 h-12 rounded-full object-cover" style="aspect-ratio:64/64;object-fit:cover"/>
+                            <div class="rounded-xl bg-gray-100 dark:bg-gray-800 flex-1 p-4" style="background-color: #C79ECF;">
+                                <p> Yes, I did. Thanks for sending it over. I'll review it and let you know if I have any questions. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t">
+                    <div class="flex items-center p-2">
+                        <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 rounded-full w-10 h-10 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C10076" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+                            </svg>
+                            <span class="sr-only">Attach</span>
+                        </button>
+                        <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 rounded-full w-10 h-10 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C10076" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" x2="12" y1="19" y2="22"></line>
+                            </svg>
+                            <span class="sr-only">Record voice message</span>
+                        </button>
+                        <textarea class="flex w-full rounded-md px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-0 resize-none flex-1 max-h-60 overflow-hidden font-bold" placeholder="Type a message" style="background-color: #F8F7FA; color: #333; border: 2px solid black;"></textarea>
+                        <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 rounded-full w-10 h-10 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C10076" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                                <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                <path d="M22 2 11 13"></path>
+                            </svg>
+                            <span class="sr-only">Send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+</body>
+</html>
