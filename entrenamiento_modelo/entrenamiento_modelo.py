@@ -65,7 +65,7 @@ def probar_y_guardar_modelo(model, tokenizer, label_encoder, archivo):
             print(f"Registro guardado: {pregunta} -> {categoria_usada}")
 
 if __name__ == "__main__":
-    archivo_entrenamiento = "C:/Users/Javier/Documents/JAVIER-UAL/4º AÑO/TFG/punthogar/punthogar_ia/python_scripts/preguntas_ia.txt"
+    archivo_entrenamiento = "C:/Users/Javier/Documents/JAVIER-UAL/4º AÑO/TFG/punthogar_flask/TFG_PUNTHOGAR_UAL/entrenamiento_modelo/dataset/preguntas_ia.txt"
     x_train, y_train, tokenizer, label_encoder = cargar_y_procesar_datos(archivo_entrenamiento)
     model = construir_modelo(tokenizer, len(set(y_train)))
     entrenar_modelo(model, x_train, y_train)
